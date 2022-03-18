@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Health Lite Dashboard</title>
+</head>
+<body>
+    <div class="section">
+        <div class="full-width height-vh">
+            
+            <div class="fixed bg-blue height-vh ">
+                <div class="">
+                    
+                        <div class="pd-top-auto">
+                            <div><img src="img/Group 19445.svg" alt="" srcset=""></div>
+                        </div>
+            
+                        <div class="full-width mg-top">
+                            <a href="index.html">
+                                <div class="navlist flex  small-mg space-pad active-effect full-width active">
+                                    <div><img src="img/Vector (1).svg" alt="" srcset=""></div>
+                                    <div> <span class="pd-left txt-white onerem"> Dashboard </span></div>
+                            </div>
+                            </a>
+            
+                            <a href="#">
+                                <div class="navlist flex space-pad active ">
+                                    <div><img src="img/3. ideas.png" alt="" srcset=""></div>
+                                    <div> <span class="pd-left txt-white onerem"> Waiting Room </span></div>
+                            </div>
+                            </a>
+            
+                            <a href="schedule.html">
+                                <div class="navlist flex space-pad active">
+                                    <div><img src="img/Group 11842.svg" alt="" srcset=""></div>
+                                    <div> <span class="pd-left txt-white onerem"> Schedule </span></div>
+                            </div>
+                            </a>
+            
+                            <a href="#">
+                                <div class="navlist flex space-pad active ">
+                                    <div><img src="img/Group 11841 (1).svg" alt="" srcset=""></div>
+                                    <div> <span class="pd-left txt-white onerem"> Profile </span></div>
+                            </div>
+                            </a>
+            
+                            <a href="#">
+                                <div class="navlist flex space-pad active ">
+                                    <div><img src="img/Vector (3).svg" alt="" srcset=""></div>
+                                    <div> <span class="pd-left txt-white onerem"> Notes </span></div>
+                            </div>
+                            </a>
+            
+                            <a href="#" class="">
+                                <div class="navlist flex space-pad full-width active">
+                                    <div><img src="img/Vector (4).svg" alt="" srcset=""></div>
+                                    <div> <span class="pd-left txt-white onerem"> Chat </span></div>
+                            </div>
+                            </a>
+            
+                        </div>
+                        
+                        <div class="full-width mg-top">
+                            <a href="#">
+                                <div class="navlist flex active space-pad ">
+                                    <div><img src="img/Ellipse 21.svg" alt="" srcset=""></div>
+                                    <div> <span class="txt-white onerem pd-left"> My Profile </span></div>
+                            </div>
+                            </a>
+            
+                            <a href="#">
+                                <div class="navlist flex active space-pad ">
+                                    <div><img src="img/Vector (5).svg" alt="" srcset=""></div>
+                                    <div> <span class="pd-left txt-white onerem"> Setting </span></div>
+                            </div>
+                            </a>
+            
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="full-width height bg-shadeBlue">
+
+            <div class="full-width">
+                <div class="full-width bg-white vh pd relative-pos z-index  fixed2 ">
+                    <div class="full-width flex-end centerjust">
+                        <div class="toggle radius"> &#9776;</div>
+                        <div class="show-icon">
+                            <div class="relative-pos">
+                                <span class=""><img src="img/Shape.svg" alt="" srcset=""></span> <span> <sup> 2 </sup></span>
+                            </div>
+                            <span class="pd-left "><img src="img/Ellipse 2.svg" alt="" srcset=""></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="division full-width pd mmg">
+                <div class="full-width">
+                    <div class="full-width division bg-blue radius innerpd">
+                        <div class="full-width ">
+                            <span class="txt-white welcometext">Welcome, </span >
+                            <span class="txt-white welcometext big">Dr. Fayemi David</span>
+    
+                           <div class="full-width pd-topandDown">
+                            <p class="txt-white">
+                                You have <span id="inline-appt"></span> new appointments and there are currently <span id="inline-total"></span> patients in the waiting room. Have a nice day at work!
+                            </p>
+                           </div>
+    
+                           <div class="full-width pd-topandDown  flex-4 blue-height">
+                               <a href="#" class="button radius letter-spacing"> Get an appointment</a>
+                               <a href="#" class="button radius letter-spacing"> Go to waiting &rarr;</a>
+                           </div>
+    
+                        </div>
+                        <div class="full-width  relative-pos image">
+                            <img src="img/character 2.svg" alt="" srcset="" class="images">
+                        </div>
+                    </div>
+<!-- ========================= Card======== Cards ==========Cards ======================================= -->
+                    <div class="full-width  mgtoanddown ">
+                        <div class="card-container full-width">
+                            <div class="cards full-width bg-white radius pd">
+                                <div class="full-width grid-text relative-pos">
+                                    <div class="full-width">
+                                        <div class="full-width relative-pos fade-black radius vh ">
+                                            <img src="img/Group 11841.svg" alt=" " class="trans">
+                                        </div>
+                                    </div>
+                                    <div class="full-width flex-end">
+                                        <select class="onerem">  
+                                            <option value="default" class="onerem"> All Time</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="full-width pd-topandDown">
+                                    <span class="block-span bigtext letter-spacing i" id="patientsnum"></span> <br> <span class="letter-spacing onerem text-style"> Total Patients</span> 
+                                </div>
+
+                                <div class="">
+                                    <span><span class="onerem"><img src="img/Group.png" alt="" srcset=""> &nbsp;</span >5% less than last month</span>
+                                </div>
+
+                            </div>
+
+                            <div class="cards full-width bg-white radius pd">
+                                <div class="full-width grid-text relative-pos">
+                                    <div class="full-width">
+                                        <div class="full-width relative-pos vh ">
+                                            <img src="img/Group 11850.svg" alt=" " class="trans">
+                                        </div>
+                                    </div>
+                                    <div class="full-width flex-end">
+                                        <select class="onerem">  
+                                            <option value="default" class="onerem"> All Time</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="full-width pd-topandDown">
+                                    <span class="block-span bigtext letter-spacing " id="appt"></span> <br> <span class="letter-spacing onerem text-style"> Appointments</span> 
+                                </div>
+
+                                <div class="">
+                                    <span><span class="onerem"><img src="img/Group 11844.svg" alt="" srcset=""> &nbsp;</span >15% less than yesterday</span>
+                                </div>
+
+                            </div>
+
+                            <div class="cards full-width bg-white radius pd">
+                                <div class="full-width grid-text relative-pos">
+                                    <div class="full-width">
+                                        <div class="full-width relative-pos vh ">
+                                            <img src="img/Group 30799.svg" alt=" " class="trans">
+                                        </div>
+                                    </div>
+                                    <div class="full-width flex-end">
+                                        <select class="onerem">  
+                                            <option value="default" class="onerem"> All Time</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="full-width pd-topandDown">
+                                    <span class="block-span bigtext letter-spacing" id="wr"></span> <br> <span class="letter-spacing onerem text-style"> Waiting Room</span> 
+                                </div>
+
+                                <div class="">
+                                    <span><span class="onerem"><img src="img/Group 11844.svg" alt="" srcset=""> &nbsp;</span >25% less than yesterday</span>
+                                </div>
+
+                            </div>
+                        </div>
+<!-- ================= Next Patient ====================== -->
+                        <div class="full-width bg-white radius mgtoanddown" id="">
+                            <div class="full-width flex-between">
+                                <div class="full-width pd balck-text-bold letter-spacing"> Your next patient</div>
+                                <div class="full-width pd flex-end"> <span class="left-align shade-blue-text">View all &rarr;</span></div>
+                            </div>
+
+                            <div class="full-width patientsList">
+
+                            </div>
+                            
+                        </div>
+
+                        <div class="full-width bg-white radius mgtoanddown">
+                            <div class="full-width flex-between">
+                                <div class="full-width pd balck-text-bold letter-spacing"> Appointment Statistics</div>
+                                <div class="full-width pd flex-end"> <span class="left-align shade-blue-text">Show by months &rarr;</span></div>
+                            </div>
+
+                            <div class="full-width">
+                                <img src="img/Group 11833.svg" class="full-width" alt="" srcset="">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    
+                    
+                </div>
+<!-- ===================== calender and otherstuff container here ==================== -->
+                <div class="full-width"> 
+                    <div class="full-width bg-white radius pd">
+                        <img src="img/Frame 30748.svg" alt="" srcset="" class="full-width">
+                    </div> 
+                    
+                    <div class="full-width bg-white radius pd mgtoanddown">
+                        <div class="full-width flex-between">
+                            <div class="full-width balck-text-bold t "> Patients By Gender</div>
+                            <div class="full-width flex-end"> 
+                                <span class="left-align shade-blue-text relative-pos">
+                                    <select class="onerem">  
+                                        <option value="default" class="onerem"> This  month</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="full-width pd">
+                            <img src="img/Frame 30750.svg" class="full-width" alt="" srcset="">
+                        </div>
+                    </div> 
+
+                    <div class="full-width bg-white radius pd mgtoanddown">
+                        <div class="full-width flex-between pd">
+                            <div class="full-width balck-text-bold letter-spacing"> Activities</div>
+                            <div class="full-width flex-end"> 
+                                <span class="left-align shade-blue-text">
+                                    <img src="img/Frame.svg" alt="">
+                                </span>
+                            </div>
+                        </div>
+ 
+
+                         <div class="full-width" id="Activities">
+
+                         </div>
+
+                    </div>   
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

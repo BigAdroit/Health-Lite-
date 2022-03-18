@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    font-family: 'inter', sans-serif;
+}
+.gap {
+    gap: 1.1rem;
+}
+.section {
+    display:grid;
+    grid-template-columns: 15% 85%;
+    height:100vh;
+}
+.full-width {
+    width: 100%
+}
+.height-vh { 
+    height:100vh ;
+} 
+.mg{
+    margin: 2rem;
+}
+.pd {
+    padding: 1.2rem;
+}
+.bg-blue {
+    background-color:#40A3F8;
+    ;
+}
+.txt-white {
+    color:#fff;
+}
+.bg-white {
+    background-color: #fff;
+}
+.vh {
+    height: 10vh;;
+}
+.bg-shadeBlue  {
+    background-color: #E5E5E5;
+}
+.division {
+    display: grid;
+    grid-template-columns: 69% 29.5%;
+    gap: 1.1rem
+}
+.radius {
+    border-radius: 8px;
+}
+.innerpd {
+    padding: 20px;
+}
+.welcometext {
+    font-family: 'inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+.big {
+    font-weight: 700;
+}
+.pd-topandDown {
+    padding: 1.2rem 0px
+}
+p{
+    font-family:'inter', sans-serif;
+}
+.letter-spacing {
+    letter-spacing:0.1rem;
+}
+.button {
+    text-decoration: none;
+    text-align:center;
+    padding: 1rem;
+    font-size:1rem;
+    background-color:#53ACF9;
+    color:white;
+    margin-right: 0.5rem;
+}
+.relative-pos {
+    position: relative;
+}
+.pd-left {
+    padding-left: 1.5rem;
+}
+.images {
+    position: absolute;
+    object-fit: cover;
+    display:block;
+    height: 10.4rem;
+    width: 70%;
+    top: 0;
+    right:0;
+}
+.mgtoanddown {
+    margin: 1rem 0;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.cards {
+
+}
+.small-height {
+    height: 30vh;
+}
+.flex-between {
+    display:flex;
+    justify-content: space-between;
+}
+.left-align {
+    text-align: left;;
+}
+.flex-end {
+    display:flex;
+    justify-content: flex-end;
+}
+.shade-blue-text {
+    color:#40A3F8;
+}
+.balck-text-bold {
+    position: relative;
+    color:black;
+    font-family:'inter', sans-serif;
+    font: size 1rem;
+    font-weight:700;
+}
+.balck-text-bold::after {
+    position: absolute;
+    content:"";
+    bottom: 0%;
+    width: 13%;
+    height:0.2rem;
+    left: 5%;
+    background-color:#40A3F8;
+    border-radius:0.5rem;
+}
+.grid-text {
+    display:grid;
+    grid-template-columns: 11% 89%;
+}
+.grid-text-reverse {
+    display: grid;
+    grid-template-columns: 32% 68%;
+}
+.grid-text-reverse-s {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.centerjust {
+    align-items: center;
+}
+.fade-black {
+    background-color: #8692A60D;
+    color: #8692A6;
+    font-family: 'inter', sans-serif;
+}
+.onerem {
+    font-size:0.8rem;
+    font-family: 'inter', sans-serif;
+}
+.flex {
+    display:flex;
+    align-items: center;
+}
+.smallpd {
+    padding: 0.5rem
+}
+.pointer {
+    cursor: pointer;
+}
+select {
+    border:none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.bgimg {
+    background-image: url(img/Rectangle\ 1328.svg);
+    background-position: cover;
+    width: 100%;
+}
+.trans {
+    position: absolute;
+    top: 10%;
+    left:50%;
+    transform: translate(-50% -50%);
+}
+.block-span {
+    display: inline-block;
+}
+.text-style  {
+    color: #8692A6;
+    font-family: 'inter', sans-serif;
+}
+.bigtext {
+    color:black;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: 'inter', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+sup{
+    border-radius: 50%;
+    background-color:#FF8080;
+    color:white;
+    padding:0.2rem;
+    font-size:0.7rem;
+    position: absolute;
+    top:-0.5rem;
+    left:1rem;
+}
+.pd-top-auto{
+    padding-top:2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.nav-pd{
+    padding: 2rem;
+}
+.mg-top {
+    margin-top: 2.5rem;;
+}
+.space-pad {
+    padding:0.8rem 2rem
+}
+.pd-tops{
+    padding: 0.7rem;
+}
+.fixed {
+    position:fixed;
+}
+.t {
+    font-size: 0.8rem;
+}
+.small-mg {
+    
+}
+.left-align{
+    text-align:left;
+    font-size: 0.8rem;
+    font-family: 'inter', sans-serif;
+}
+.active-effect{
+    background-color:black;
+}
+
+.active:hover {
+    background-color: black;
+    margin: 0.8rem 0;
+    animation-name: loading;
+    animation-duration: 1s;
+    
+}
+.active-effect::after{
+    content:"";
+    position: absolute;
+    left:0;
+    background-color:white;
+    height:2.5rem;
+    width:0.1rem;
+}
+.show-icon {
+    position:absolute;
+    right:17%;
+    top:50%;
+    transform: translateY(-50%);
+    display:flex;
+    justify-content: center;
+}
+
+@keyframes loading {
+    0% {
+        transform: skew(-20deg) ;
+        opacity: 0.4;
+    }
+    50%{
+        transform: skew(-5deg);
+        opacity: 0.7;
+    }
+    100% {
+        transform: skew(0);
+        opacity: 1;
+    }
+
+}
+.text {
+
+}
+.flex-4 {
+    display:flex
+}
+
+.toggle {
+    font-size: 1.7rem;
+    font-weight: 700;
+    position:absolute;
+    top:50%;
+    left:2rem;
+    transform: translateY(-50%);
+    display:none;
+    cursor:pointer;
+}
+.fixed2 {
+    position:fixed;
+    top:0;
+    margin-bottom: 2rem;
+}
+.mmg{
+    margin-top: 3rem;
+}
+.z-index {
+    z-index:100;
+}
+/*  Media Query  */
+@media (max-width:1324px) {
+    .section {
+        grid-template-columns: 0% 100%;
+    }
+    .fixed {
+        display: none;
+    }
+    .pd-left .txt-white .onerem {
+        display:none;
+    }
+    .division {
+        display: block;
+    }
+    .toggle{
+        display:block;
+    }
+    .show-icon{
+        right:5%
+    }
+    .image{
+        display: none;
+    }
+    .block {
+        display:block;
+        top:3rem;
+        z-index: 2;
+    }
+    .grid-text-reverse {
+        grid-template-columns: 70% 30%;
+    }
+    .reverse {
+        order: 2
+    }
+    .reserve2 {
+        order:1
+    }
+    
+    
+}
+@media (max-width:860px) {
+    .card-container{
+        display: block;
+    }
+    .cards{
+        margin:1rem auto;
+    }
+    .image{
+        display: none;
+    }
+    .grid-text-reverse {
+        grid-template-columns: unset;
+        grid-template-rows: auto auto;
+    }
+    .reserve2 {
+        order: 1;
+    }
+    .reverse{
+        order:2;
+    }
+    .mmg {
+        margin-top:6rem;
+    }
+}
