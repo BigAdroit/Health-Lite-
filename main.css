@@ -98,6 +98,11 @@ body{
     font-family:'poppins', sans-serif;
     font-size: 0.8rem;
 }
+.h-para{
+    color:#696969;
+    font-family:'poppins', sans-serif;
+    font-size: 0.8rem;
+}
 .active {
     color:#40A3F8;
 }
@@ -249,6 +254,9 @@ body{
     padding:0.6rem;
     padding-bottom: 2rem;
 }
+.color-change:hover {
+    color:#40A3F8;
+}
 .white-bg{
     background: linear-gradient(138.88deg, rgba(254, 254, 254, 0) -2.44%, #F9F9F9 -2.43%, rgba(254, 254, 254, 0.51) 98.26%);
 }
@@ -263,7 +271,6 @@ body{
 }
 .white {
     background-color:white;
-    color:#40A3F8;
 }
 .trans-center {
     position: relative;
@@ -591,6 +598,9 @@ a{
     .arrow-grid {
         grid-template-columns:unset;
         grid-template-columns: auto;
+    }
+    .caurosel {
+        display:none;
     }
  }
 
