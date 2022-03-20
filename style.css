@@ -230,18 +230,21 @@ hr {
     color:white;
 }
 .toggling-menu {
-    width: 30%;
+    width: 40%;
     height: 90vh;
     background-color: #40A3F8;
     position:absolute;
     right:0rem;
-    top: 4rem;
+    top: 4.5rem;
     transition: all 2s;
     animation: fade-in 2s;
     display:none;
-    z-index: 1;
+    border-top-left-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+
 }
-.toggling-menu ul {
+.toggling-menu .ul {
     list-style-type: none;
 }
 .toggling-menu ul li {
@@ -285,6 +288,35 @@ hr {
 
 .nav-pd {
     padding: 3rem 5rem;
+}
+.animation2 {
+    animation-name: cardanimation;
+    animation-duration: 1s;
+}
+.success {
+    background-color: rgb(195, 240, 195);
+    color:white;
+    margin:1rem auto;
+    padding:1.5rem;
+    display: none;
+    font-family:'poppins', sans-serif;
+    font: size 0.5rem;
+}
+@keyframes cardanimation {
+    0% {
+        transform: translateY(-5rem);
+        opacity:0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    80% {
+        opacity:0.8;
+    }
+    100% {
+        transform: translateY(0);
+        opacity:1;
+    }
 }
 
 @keyframes animationOne {
@@ -331,11 +363,18 @@ hr {
 }
 
 @media (max-width:830px) {
+    
+    .container {
+        height:70vh;
+    }
     .sub-division {
         display: block;
     }
     h1 {
-        font-size: 2.6rem;
+        font-size: 2rem;
+    }
+    .paragraph {
+        font-size: 0.8;
     }
     .nav-menu-bar {
         display: none;
@@ -389,6 +428,27 @@ hr {
 @media (max-width:650px) {
    .three-devision {
        display: block;
+   }
+   .container {
+       height:50vh;
+   }
+   h1{
+       font-size: 1.3rem;
+   }
+   .contacts-box {
+       transform: translate(-50%, -20%);
+   }
+   .paragraph {
+       font-size: 0.7rem;
+   }
+   .logo img {
+       width: 50%;
+   }
+   .f-pd {
+       padding: 1rem;
+   }
+   .nav-pd {
+       padding:1rem;
    }
    .media-mg{
        margin:2rem 0;

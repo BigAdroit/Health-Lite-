@@ -103,9 +103,7 @@ p{
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
-.cards {
 
-}
 .small-height {
     height: 30vh;
 }
@@ -381,5 +379,14 @@ sup{
     }
     .mmg {
         margin-top:6rem;
+    }
+}
+@media (max-width:600px) {
+    .letter-spacing{
+        letter-spacing: 0.02;
+    }
+    .button {
+        font-size: 0.8rem;
+        padding:1rem 0.4rem;
     }
 }

@@ -16,7 +16,7 @@
     top:0;
     right: 0;
     height: 100vh;
-    z-index: 0;
+    z-index: -1;
 }
 .gradient4{
     background-image: linear-gradient(to bottom right,rgb(230, 242, 252),rgb(230, 245, 253),#fff,rgba(229, 243, 250, 0.65), rgb(217, 233, 245));
@@ -97,9 +97,6 @@ body{
     color:#696969;
     font-family:'poppins', sans-serif;
     font-size: 0.8rem;
-}
-.a-menu:hover {
-    box-shadow:-2px 5px 5px rgba(0,0,0, 0.6);
 }
 .active {
     color:#40A3F8;
@@ -337,8 +334,8 @@ a{
 }
 
 .toggling-menu {
-    width: 20%;
-    height: 90vh;
+    width: 40%;
+    height: 70vh;
     background-color: #40A3F8;
     position:absolute;
     right:0rem;
@@ -347,10 +344,11 @@ a{
     animation: fade-in 2s;
     display:none;
     border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     text-align: center;
 
 }
-.toggling-menu ul {
+.toggling-menu .ul {
     list-style-type: none;
 }
 .toggling-menu ul li {
@@ -375,6 +373,7 @@ a{
     color:white;
     font-family:'poppins', sans-serif;
     font-size: 0.8rem;
+    transition: all .5s;
 }
 .men-active {
     color:#696969;
@@ -388,6 +387,56 @@ a{
     height:4rem;
     border-radius: 50%;
     background: linear-gradient(90.26deg, #5AAEFF 0.21%, rgba(99, 203, 254, 0.65) 97.38%);
+}
+.a-menu:hover:before {
+    width:2px;
+}
+.a-menu:hover:after {
+    height:2px;
+}
+.a-menu::before{
+    content: "";
+    width: 0px;
+    height:50%;
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    background-color: black;
+}
+
+.a-menu::after {
+    content:"";
+    position:absolute;
+    width:100%;
+    bottom:1rem;
+    right: 0;
+    height:0px;
+    background-color: black;
+}
+.a-men:hover:before {
+    width:2px;
+}
+.a-men:hover:after {
+    height:2px;
+}
+.a-men::before{
+    content: "";
+    width: 0px;
+    height:50%;
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    background-color: black;
+}
+
+.a-men::after {
+    content:"";
+    position:absolute;
+    width:100%;
+    bottom:1rem;
+    right: 0;
+    height:0px;
+    background-color: black;
 }
 .over-animation {
     animation-name: scale;
@@ -594,4 +643,8 @@ a{
     .nav-pd{
         padding:1.4rem;
     }
+    .f-pd {
+        padding: 1rem;
+    }
+    
  }

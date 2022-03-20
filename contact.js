@@ -13,11 +13,26 @@ submit.addEventListener('click', (e)=> {
         messageObject.email = email;
         messageObject.message = message
         array.push(messageObject)
-        sessionStorage.setItem('messageData', JSON.stringify(array))
-        name = "";
-        email = "";
-        message ="";
-        alert('hello')
+        localStorage.setItem('messageData', JSON.stringify(array))
+        document.getElementById('email').value=""
+        document.getElementById('name').value=""
+        document.getElementById('message').value=""
+            let inboxMessage = document.querySelector('.success')
+            inboxMessage.style.display='block'
+            inboxMessage.innerHTML = `<b> Message sent successfully</b> <br> Your message will be reply soon, <br> Thanks!`
+
+        setTimeout(()=> {
+            inboxMessage.style.display='none';
+        }, 5000)
+        
+    }else {
+        let inboxMessage = document.querySelector('.success')
+            inboxMessage.style.display='block'
+            inboxMessage.style.backgroundColor="tomato"
+            inboxMessage.innerHTML = `<b> Message not sent</b> <br> an error occur while sending your message!, <br> Try to resend`
+            setTimeout(()=> {
+                inboxMessage.style.display='none';
+            }, 5000)
     }
 
 })

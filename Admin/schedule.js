@@ -57,12 +57,6 @@ fetch(url)
                 </div>
                 </div>
             </div> `
-            document.getElementById('line-time').innerHTML +=`
-            <div class="full-width grid-text smallpd centerjust">
-            <div class="full-width onerem smallpd"> <span> ${$hours}</span></div>
-            <div class="full-width smallpd"> <hr> </div>
-        </div>
-            `
         });
 
         
